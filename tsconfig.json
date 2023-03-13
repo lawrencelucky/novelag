@@ -1,23 +1,47 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noImplicitAny": false,
+        "jsx": "preserve",
+        "incremental": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"],
+            "@/common/*": ["components/common/*"],
+            "@/layouts/*": ["components/layouts/*"],
+            "@/pageComponents/*": ["components/pageComponents/*"],
+            "@icons": ["icons"],
+            "@hooks/*": ["hooks/*"],
+            "@/services/*": ["config/services/*"],
+            "@pages/*": ["pages/*"],
+            "@config/*": ["config/*"],
+            "@tests/*": ["__tests__/*"],
+            "@logger": ["logger.config"],
+            "@/context/*": ["config/context/*"],
+            "@/constants/*": ["constants/*"],
+            "@/styles/*": ["styles/*"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "jest.config.js",
+        "jest.setup.js",
+        "tailwind.config.js",
+        "setupTests.js",
+        "components/common/hoc/withGuard.jsx"
+    ],
+    "exclude": ["node_modules"]
 }
