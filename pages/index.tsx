@@ -16,7 +16,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Typography.Title className="text-y2kred-10">Hello</Typography.Title>
+            <Typography.Title className="text-y2kred-10">Hello Dashboard</Typography.Title>
         </>
     );
 }
