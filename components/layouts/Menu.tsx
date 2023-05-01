@@ -62,7 +62,7 @@ const Menu = () => {
                             <AntdMenu.Item
                                 icon={<div className="text-base fill-current">{icon}</div>}
                                 key={link}
-                                className="text-base text-black font-medium bg-transparent !rounded-none"
+                                className="text-base text-black font-medium bg-transparent !rounded-none !px-5"
                             >
                                 <Link href={link} passHref className="!text-black">
                                     {name}
